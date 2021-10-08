@@ -1,0 +1,46 @@
+Tratamento 01:
+Indices_ep
+Tratamento
+Definição da doença
+Prevenção
+teste_rapido_diag
+Consequências	
+
+Tratamento 02:
+Prevenção
+Tratamento
+Definição_da_doença
+Indices_ep
+teste_rapido_diag
+Consequências
+
+
+def stop_words_amostra(dataset,coluna):
+    palavras_irrelevantes = nltk.corpus.stopwords.words("portuguese")
+    texto_processado = list()
+    for text in dataset[coluna]:
+        novo_texto = list()
+        palavras_texto = token_espaco.tokenize(str(text))
+        for palavra in palavras_texto:
+            if palavra not in palavras_irrelevantes:
+                novo_texto.append(palavra)
+        texto_processado.append(' '.join(novo_texto))
+        
+    dataset[coluna] = texto_processado
+
+Tratamento 03: 
+Prevenção
+Tratamento
+Definição_da_Doença
+Indices_ep
+teste_rapido_diag
+Consequências
+
+
+Tratamento 04: 
+Prevenção
+Tratamento
+Definição_da_Doença
+Indices_ep
+teste_rapido_diag
+Consequências
